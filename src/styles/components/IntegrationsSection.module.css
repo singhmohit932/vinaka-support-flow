@@ -1,0 +1,284 @@
+.container {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pill {
+  display: inline-block;
+  background-color: #f0f5ff;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* Categories Grid */
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .categoriesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categoryCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryCard:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+  transform: translateY(-2px);
+}
+
+.categoryTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.25rem;
+}
+
+.integrationsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.integrationItem {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 0;
+  color: #374151;
+  font-size: 0.9375rem;
+  transition: color 0.2s ease;
+}
+
+.integrationItem:hover {
+  color: #1d4ed8;
+}
+
+.integrationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+  color: #1e40af;
+}
+
+.viewAllButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2563eb;
+  background-color: transparent;
+  border: 1px solid #dbeafe;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.viewAllButton:hover {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.arrowIcon {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.viewAllButton:hover .arrowIcon {
+  transform: translateX(2px);
+}
+
+/* API Section */
+.apiSection {
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.apiContent {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.apiIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.apiTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.apiDescription {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.apiButton {
+  background-color: white;
+  color: #2563eb;
+  border: 1px solid #d1d5db;
+  font-weight: 500;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.apiButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+/* Trusted By */
+.trustedBy {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.trustedByText {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0 auto;
+  max-width: 64rem;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.logoItem:hover {
+  opacity: 1;
+}
+
+.logoImage {
+  height: 1.75rem;
+  width: auto;
+  filter: grayscale(100%) contrast(0) brightness(1.5);
+  transition: filter 0.2s ease;
+}
+
+.logoItem:hover .logoImage {
+  filter: none;
+}
+
+.secondaryButton {
+  font-weight: 500;
+  color: #2563eb;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 1rem;
+}
+
+.secondaryButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
